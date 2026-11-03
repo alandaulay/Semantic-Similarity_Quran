@@ -87,27 +87,23 @@ embedding, dan respons Gemini disimpan lokal untuk menghindari pemrosesan
 ulang. Gunakan opsi `force_download` atau `force_recompute` di notebook hanya
 jika memang ingin memperbarui cache.
 
-## Struktur
+## Struktur repository
 
 ```text
-Project_4/
+.
 ├── Project_4_Quranic_Semantic_Similarity.ipynb
 ├── quran_similarity.py
 ├── requirements.txt
 ├── README.md
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── embeddings/
-├── results/
-│   ├── similarity/
-│   ├── clustering/
-│   └── theme_analysis/
-├── visualizations/
-└── logs/
+├── .env.example
+└── .gitignore
 ```
 
 ## Output
+
+Folder berikut dibuat secara lokal setelah notebook dijalankan dan sengaja
+tidak diunggah ke repository karena berisi data API, teks ayat, embedding,
+atau keluaran eksperimen:
 
 - `data/raw/`: respons API asli, metadata sumber, laporan validasi.
 - `data/processed/`: CSV terstruktur dan teks hasil preprocessing.
